@@ -110,4 +110,9 @@ public abstract class Persona {
 		this.madre = madre;
 	}
 
+	public int getLongPaso() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }

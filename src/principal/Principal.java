@@ -33,17 +33,30 @@ public class Principal {
 		 */
 		// crear un Estudiante
 
-		/*
-		 * Estudiante estAnonimo = new Estudiante(123);
-		 * System.out.println(estAnonimo.toString()); Estudiante estudiante = new
-		 * Estudiante(111, "44556677G","Carlos", 'M', LocalDate.now(), 187, estAnonimo,
-		 * null);
-		 * 
-		 * System.out.println(estudiante.toString());
-		 * 
-		 * Profesor profe1 = new Profesor(); System.out.println(profe1);
-		 */
+		
+		  Estudiante estAnonimo = new Estudiante(123);
+		  //System.out.println(estAnonimo.toString()); 
+		  Estudiante estudiante = new
+		  Estudiante(111, "44556677G","Carlos", 'M', LocalDate.now(), 187, estAnonimo,
+		  null);
+		  Estudiante est1 = new Estudiante(111, "11552222t","Paco", 'J', LocalDate.now(), 187, estAnonimo,
+				  null);
+		  Estudiante est2 = new Estudiante(111, "42534688r","Carlos", 'L', LocalDate.now(), 187, estAnonimo,
+				  null);
+		  Estudiante est3 = new Estudiante(111, "44556677G","Carlos", 'M', LocalDate.now(), 187, estAnonimo,
+				  null);
+		  
+		  Estudiante[] listaEstudiantes= {estAnonimo,est1,est2,est3};
+		  
+		  //System.out.println(estudiante.toString());
+		  
+		 Profesor profe1 = new Profesor(); System.out.println(profe1);
+		
 		Practicas practicas = new Practicas();
+		practicas.ordenaEstudiantes(listaEstudiantes);
+		for (int i = 0; i < listaEstudiantes.length; i++) {
+			System.out.println(listaEstudiantes[i]);
+		}
 		// new Practicas().muestraNumerosDe1A1000();
 		// practicas.muestraNumerosDe1A1000();
 		// practicas.muestraNumeros3(20, 25);
@@ -82,6 +95,9 @@ public class Principal {
 		//Arrays.sort(datos);
 		String[] cadenas =  {"perro","gato","alce"};
 		practicas.ordenaCadenas(cadenas);
+		for (int i = 0; i < cadenas.length; i++) {
+			System.out.println(cadenas[i]);
+		}
 		System.out.println("fin");
 
 	}
