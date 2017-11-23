@@ -28,6 +28,23 @@ public class Practicas {
 					cadenas[i] = cadenas[j];
 					cadenas[j] = aux;
 				}
+	}
+	public int[] mezclaArrays (int[] l1, int[] l2) {
+		int i=0, j=0, k=0;
+		int [] resultado = new int [l1.length + l2.length];
+		while (l1[i] != Integer.MAX_VALUE || l2[j] != Integer.MAX_VALUE) {
+			if (l1[i]<l2[j])
+				resultado[k] = l1[i++];
+			else
+				resultado[k] = l2[j++];
+			k++;
+			if (i==l1.length)
+				l1[--i] =Integer.MAX_VALUE; 
+			if (j==l2.length)
+				l2[--j] =Integer.MAX_VALUE; 
+			
+			}
+		return resultado;
 		
 		
 	}

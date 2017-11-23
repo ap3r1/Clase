@@ -50,13 +50,13 @@ public class Principal {
 		  
 		  //System.out.println(estudiante.toString());
 		  
-		 Profesor profe1 = new Profesor(); System.out.println(profe1);
+		 //Profesor profe1 = new Profesor(); System.out.println(profe1);
 		
 		Practicas practicas = new Practicas();
-		practicas.ordenaEstudiantes(listaEstudiantes);
-		for (int i = 0; i < listaEstudiantes.length; i++) {
-			System.out.println(listaEstudiantes[i]);
-		}
+		//practicas.ordenaEstudiantes(listaEstudiantes);
+		//for (int i = 0; i < listaEstudiantes.length; i++) {
+			//System.out.println(listaEstudiantes[i]);
+		//}
 		// new Practicas().muestraNumerosDe1A1000();
 		// practicas.muestraNumerosDe1A1000();
 		// practicas.muestraNumeros3(20, 25);
@@ -90,13 +90,19 @@ public class Principal {
 		
 		float saldoFinal = practicas.calculaSaldo(saldo, movimientos);
 		*/
-		int[] datos = practicas.generaAleatorios3(500, 1, 500);
+		//int[] datos = practicas.generaAleatorios3(500, 1, 500);
 		//practicas.ordenaEnteros(datos);
 		//Arrays.sort(datos);
-		String[] cadenas =  {"perro","gato","alce"};
-		practicas.ordenaCadenas(cadenas);
-		for (int i = 0; i < cadenas.length; i++) {
-			System.out.println(cadenas[i]);
+		//String[] cadenas =  {"perro","gato","alce"};
+		//practicas.ordenaCadenas(cadenas);
+		//for (int i = 0; i < cadenas.length; i++) {
+			//System.out.println(cadenas[i]);
+		//}
+		int[] lista1 = {7,51,65,99};
+		int[] lista2 = {2,4,6,6,14};
+		int[] arrayMezclado = practicas.mezclaArrays(lista1, lista2);
+		for (int i = 0; i < arrayMezclado.length; i++) {
+			System.out.println(arrayMezclado[i]);
 		}
 		System.out.println("fin");
 
